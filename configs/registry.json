@@ -1,0 +1,20 @@
+{
+  "postgres": {
+    "enabled": true,
+    "autostart": true,
+    "depends_on": []
+  },
+  "redis": {
+    "enabled": true,
+    "autostart": true,
+    "depends_on": []
+  },
+  "immich": {
+    "enabled": true,
+    "autostart": false,
+    "depends_on": [
+      "postgres",
+      "redis"
+    ]
+  }
+}
