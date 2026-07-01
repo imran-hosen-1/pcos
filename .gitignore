@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.log
+.env
+venv/
+runtime/
+logs/
+state/
+config/local.yml
+config/secrets.yml
+*.db
+*.sqlite
+*.sqlite3

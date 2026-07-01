@@ -1,0 +1,14 @@
+{
+  "postgres": {
+    "type": "process",
+    "start": "pg_ctl -D /var/lib/postgresql/17/main start",
+    "stop": "pg_ctl -D /var/lib/postgresql/17/main stop",
+    "autostart": true
+  },
+  "redis": {
+    "type": "process",
+    "start": "redis-server --daemonize yes",
+    "stop": "pkill redis-server",
+    "autostart": true
+  }
+}
