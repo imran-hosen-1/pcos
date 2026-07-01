@@ -3,11 +3,11 @@ from __future__ import annotations
 import shutil
 import subprocess
 
-from .base import BaseService
+from .base import Service
 from ..registry import ServiceConfig
 
 
-class ImmichService(BaseService):
+class ImmichService(Service):
     def __init__(self, config: ServiceConfig) -> None:
         super().__init__(config)
         self.url = config.metadata.get("url", "http://localhost:3001") if config.metadata else "http://localhost:3001"
